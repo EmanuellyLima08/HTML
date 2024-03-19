@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emanuelly</title>
+
+    <style>
+        body{
+            background: #8abbff;
+            color: rgb(158, 5, 143);
+            text-shadow: 2px 2px 5px #f47fff;
+        }
+        h1{
+            background: #000;
+            color:aqua;
+            text-align: center;
+        }
+        h2{
+            text-align: center;
+            color: rgb(87, 7, 75);
+        }
+        p{
+            color:#000;
+            background: rgba(218, 212, 212, 0.317);
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Documento da Manú</h1>
+    <p>Olá, meu nome é Emanuelly, tenho 16 anos!
+    <br />
+    <br />
+    Trabalhando com HTML!</p>
+
+    <h2>Alerta de mensagem!</h2>
+    <p style="text-align: center">
+        <button onclick="alerta()"
+        style="background: red;">‼️Alerta‼️</button></p>
+    <h2>Altere a cor do fundo do site clicando em uma das cores abaixo:</h2>
+    <p style="text-align: center"><button onclick="cor1()" style="background: rgb(240, 255, 156);">Amarelo</button></p>
+    </p>
+
+    <p style="text-align: center"><button onclick="cor2()" style="background: rgb(120, 255, 170);">Verde</button></p>
+    </p>
+
+    <p style="text-align: center"><button onclick="cor3()" style="background: rgb(134, 144, 255);">Roxo</button></p>
+    </p>
+
+    <p style="text-align: center"><button onclick="cor4()" style="background: #8abbff;">Cor Original</button></p>
+    </p>
+
+    <!-- document.getElementsByTagName("body")[0].style.background = "#7263f2" (mudar a cor pelo console do site)-->
+
+    <script>
+    console.log("Olá Mundo!");
+
+    function alerta(){
+        var nome = prompt("Olá, informe seu nome!");
+        alert(`Olá ${nome}!`);
+    }
+
+    function cor1(){
+        document.getElementsByTagName("body")[0].style.background = "rgb(240, 255, 156)"
+    }
+
+    function cor2(){
+        document.getElementsByTagName("body")[0].style.background = "rgb(120, 255, 170)"
+    }
+
+    function cor3(){
+        document.getElementsByTagName("body")[0].style.background = "rgb(134, 144, 255)"
+    }
+
+    function cor4(){
+        document.getElementsByTagName("body")[0].style.background = "#8abbff"
+    }
+    </script>
+</body>
+</html>
+
